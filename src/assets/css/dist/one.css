@@ -1,0 +1,40 @@
+#app {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: url("../../assets/image/bg.jpg") no-repeat top center;
+}
+#app header {
+  position: relative;
+  height: 1.25rem;
+  background: url("../../assets/image/head_bg.png") no-repeat 100% 100%;
+}
+#app header h1 {
+  line-height: 1rem;
+  font-size: 0.475rem;
+  text-align: center;
+  color: #fff;
+}
+#app header .showTime {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0;
+  font-size: 0.25rem;
+  /* pxToRem */
+  line-height: 0.9375rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+#app .mainbox {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0.125rem 0.125rem 0;
+}
+#app .mainbox .cloumn:first-child,
+#app .mainbox .cloumn:last-child {
+  flex: 3;
+}
+#app .mainbox .cloumn:nth-child(2) {
+  flex: 5;
+}
